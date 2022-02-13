@@ -25,6 +25,7 @@ public class ServicioEntity {
     
     private String codigo;
     private String nombre;
+    private String descripcion;
     private Integer existencias;
     private Double precio;
     private Long imagen;
@@ -62,6 +63,23 @@ public class ServicioEntity {
     public void setCodigo(String codigo) {
         this.codigo = codigo;
     }
+
+   
+
+  
+
+
+    
+
+    public String getDescripcion() {
+        return descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+  
 
     public String getNombre() {
         return nombre;

@@ -26,8 +26,9 @@ public class ServicioService {
 
     public ServicioEntity generateRandomServicio() {
         ServicioEntity oServicioEntity = new ServicioEntity();
-        oServicioEntity.setCodigo(Integer.toString(RandomHelper.getRandomInt(1, 100000)) + LETTERS_CODE[RandomHelper.getRandomInt(0, 25)]);
+        oServicioEntity.setCodigo(generateProduct());
         oServicioEntity.setNombre(generateProduct());
+        oServicioEntity.setDescripcion(generateProduct());
         oServicioEntity.setExistencias(RandomHelper.getRandomInt(0, 100));
         oServicioEntity.setPrecio(RandomHelper.getRadomDouble(0, 100));
         //oServicioEntity.setImagen((long) RandomHelper.getRandomInt(0, 100));
